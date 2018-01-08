@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+/* MAPD 711 - Final Project - Online Purchase App */
+/* KIDS team - 1/06/2018                          */
+/* 300966930 – Aman preet kaur
+   300960367 – Fernando ito
+   300964037 – santhosh damodharan
+   300910506 – Sergio de Almeida Brunacci         */
+/* activity_order.xml                             */
+-->
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/order_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ca.cc.fito.mapd711_assign3_onlinepurchaseapp.OrderActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/tvOrder"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="58dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGreetings1" />
+
+    <Button
+        android:id="@+id/btnListProducts"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/customerPrimary"
+        android:text="List Products"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toTopOf="@+id/tvOrder"
+        app:layout_constraintEnd_toStartOf="@+id/btnViewOrder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etOrderNumber" />
+
+    <Button
+        android:id="@+id/btnViewOrder"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/customerPrimary"
+        android:text="List Orders"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toTopOf="@+id/tvOrder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnListProducts"
+        app:layout_constraintTop_toBottomOf="@+id/btnUpdateOrder" />
+
+    <Button
+        android:id="@+id/btnAddOrder"
+        android:layout_width="100dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/customerPrimary"
+        android:text="@string/add"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etProductNumber"
+        app:layout_constraintTop_toBottomOf="@+id/tvGreetings1" />
+
+    <Button
+        android:id="@+id/btnUpdateOrder"
+        android:layout_width="100dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/customerPrimary"
+        android:text="@string/update"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etOrderNumber"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddOrder" />
+
+    <EditText
+        android:id="@+id/etProductNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Product #"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGreetings1" />
+
+    <TextView
+        android:id="@+id/tvGreetings1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="200dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/tvOrder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etOrderNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Order #"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etProductNumber" />
+
+    <TextView
+        android:id="@+id/tvShowPreferences"
+        android:layout_width="349dp"
+        android:layout_height="22dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Show Preferences"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvOrder" />
+
+</android.support.constraint.ConstraintLayout>

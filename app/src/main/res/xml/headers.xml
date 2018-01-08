@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+/* MAPD 711 - Final Project - Online Purchase App */
+/* KIDS team - 1/06/2018                          */
+/* 300966930 – Aman preet kaur
+   300960367 – Fernando ito
+   300964037 – santhosh damodharan
+   300910506 – Sergio de Almeida Brunacci         */
+/* headers.xml                                    */
+-->
+
+<preference-headers
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <header android:fragment="ca.cc.fito.mapd711_assign3_onlinepurchaseapp.PreferencesActivity$PrefFragment"
+        android:title="Preferences"
+        android:summary="Sample preferences" />
+</preference-headers>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+/* MAPD 711 - Final Project - Online Purchase App */
+/* KIDS team - 1/06/2018                          */
+/* AndroidManifest.xml                            */
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ca.cc.fito.mapd711_assign3_onlinepurchaseapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PreferencesActivity"
+            android:label="@string/app_name"
+            android:theme="@style/CustomerTheme">
+            <intent-filter>
+                <action android:name="ca.cc.fito.mapd711_assign3_onlinepurchaseapp.PreferencesActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".OrderActivity"
+            android:label="@string/customer_title"
+            android:theme="@style/CustomerTheme">
+            <intent-filter>
+                <action android:name="ca.cc.fito.mapd711_assign3_onlinepurchaseapp.OrderActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".StaffActivity"
+            android:label="@string/staff_title"
+            android:theme="@style/StaffTheme">
+            <intent-filter>
+                <action android:name="ca.cc.fito.mapd711_assign3_onlinepurchaseapp.StaffActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".QuickRegistryActivity"
+            android:label="@string/quick_registry_title"
+            android:theme="@style/StaffTheme">
+            <intent-filter>
+                <action android:name="ca.cc.fito.mapd711_assign3_onlinepurchaseapp.QuickRegistryActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

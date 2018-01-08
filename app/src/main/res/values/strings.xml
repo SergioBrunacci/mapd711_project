@@ -1,0 +1,25 @@
+<!--
+/* MAPD 711 - Final Project - Online Purchase App */
+/* KIDS team - 1/06/2018                          */
+/* 300966930 – Aman preet kaur
+   300960367 – Fernando ito
+   300964037 – santhosh damodharan
+   300910506 – Sergio de Almeida Brunacci         */
+/* strings.xml                                    */
+-->
+
+<resources>
+    <string name="app_name">Online Purchase Application</string>
+    <string name="customer_title">Customer - Purchase Orders</string>
+    <string name="staff_title">Staff - Order Status</string>
+    <string name="quick_registry_title">Staff - Quick Registry</string>
+
+    <string name="log_in">Log In</string>
+    <string name="logo_text">Welcome to OPA</string>
+    <string name="add">Add</string>
+    <string name="update">Update</string>
+    <string name="reset">Reset</string>
+
+
+
+</resources>
